@@ -1,0 +1,12 @@
+max=100
+
+# Compile the cpp again
+g++ -o prime_cpp prime.cpp
+
+for i in `seq $max`
+do
+	echo $i
+    python3 prime.py >> output.txt
+    ./prime_cpp >> output.txt
+done
+
