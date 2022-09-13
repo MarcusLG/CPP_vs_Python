@@ -11,7 +11,7 @@ int main()
 	std::vector<int> prime_list;
 
 	bool tok;
-	for (int i=2; i <= 10001; i++){
+	for (int i=2; i < 10001; i++){
 		tok = false;
 		for (int j=2; j < i; j++){
 			if (i%j == 0){
